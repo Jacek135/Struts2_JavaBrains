@@ -1,0 +1,5 @@
+.idea/
+Struts2Starter.iml
+out/*
+target/*
+.gitignore.swp

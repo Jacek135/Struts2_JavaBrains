@@ -1,17 +1,16 @@
 package org.koushik.javabrains.action;
 
-public class LoginAction {
+import com.opensymphony.xwork2.Action;
+
+public class LoginAction implements Action{
     private String userId;
     private String password;
-
-    private static String SUCCESS = "success";
-    private static String FAILURE = "failure";
 
     public String execute(){
         if(getUserId().equals("userId") && (getPassword().equals("password"))){
             return SUCCESS;
         }
-        return FAILURE;
+        return LOGIN;
     }
 
     public String getUserId() {

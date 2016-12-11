@@ -6,13 +6,7 @@
 
 <struts>
 
-    <package name="login" namespace="/" extends="struts-default">
-        <action name="login" class="org.koushik.javabrains.action.LoginAction">
-            <result name="success">searchForm.jsp</result>
-            <result name="failure">login.jsp</result>
-        </action>
-    </package>
-
+    <include file="login.xml" />
 
     <package name="default" namespace="/tutorials" extends="struts-default">
         <action name="getTutorial" class="org.koushik.javabrains.action.TutorialAction">

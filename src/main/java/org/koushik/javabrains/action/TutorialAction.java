@@ -1,12 +1,22 @@
 package org.koushik.javabrains.action;
 
+import org.koushik.javabrains.service.TutorialFinderService;
+
 public class TutorialAction {
-    private final static String msg = "success";
-//    private final static String msg = "failure";
+    private String bestTutorialSite;
+
+    public String getBestTutorialSite() {
+        return bestTutorialSite;
+    }
+
+    public void setBestTutorialSite(String bestTutorialSite) {
+        this.bestTutorialSite = bestTutorialSite;
+    }
 
     public String execute(){
 
-        System.out.println("Hello from execute" + msg.toUpperCase());
-        return msg;
+        TutorialFinderService tutorialFinderService = new TutorialFinderService();
+        setBestTutorialSite(tutorialFinderService.getBestTutorialSite());
+        return "success";
     }
 }

@@ -14,4 +14,11 @@
             <result name="failure">/User/pages/error.jsp</result>
         </action>
     </package>
+
+   <package name="search" namespace="/" extends="struts-default">
+        <action name="searchForm">
+            <result>/User/pages/success.jsp</result>
+        </action>
+    </package>
+
 </struts>

@@ -4,6 +4,6 @@
     <title>Success</title>
 </head>
 <body>
-FUCKING SUCCESS!!!
+Business service executed!
 </body>
 </html>

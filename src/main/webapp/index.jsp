@@ -12,6 +12,7 @@
 </head>
 <body>
 Index
-Hello my friend!!!`
+Hello my friend!!!
+How are you??
 </body>
 </html>

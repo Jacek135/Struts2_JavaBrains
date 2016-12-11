@@ -3,14 +3,20 @@ package org.koushik.javabrains.action;
 import org.koushik.javabrains.service.TutorialFinderService;
 
 public class TutorialAction {
-    private final static String msg = "success";
-//    private final static String msg = "failure";
+    private String bestTutorialSite;
+
+    public String getBestTutorialSite() {
+        return bestTutorialSite;
+    }
+
+    public void setBestTutorialSite(String bestTutorialSite) {
+        this.bestTutorialSite = bestTutorialSite;
+    }
 
     public String execute(){
 
         TutorialFinderService tutorialFinderService = new TutorialFinderService();
-        String bestTutorialSite = tutorialFinderService.getBestTutorialSite();
-        System.out.println(bestTutorialSite);
-        return msg;
+        setBestTutorialSite(tutorialFinderService.getBestTutorialSite());
+        return "success";
     }
 }

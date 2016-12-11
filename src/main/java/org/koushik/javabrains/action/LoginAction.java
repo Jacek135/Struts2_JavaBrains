@@ -4,11 +4,14 @@ public class LoginAction {
     private String userId;
     private String password;
 
+    private static String SUCCESS = "success";
+    private static String FAILURE = "failure";
+
     public String execute(){
         if(getUserId().equals("userId") && (getPassword().equals("password"))){
-            return "success";
+            return SUCCESS;
         }
-        return "failure";
+        return FAILURE;
     }
 
     public String getUserId() {

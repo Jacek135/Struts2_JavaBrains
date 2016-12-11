@@ -9,16 +9,18 @@
     <include file="login.xml" />
 
     <package name="default" namespace="/tutorials" extends="struts-default">
-        <action name="getTutorial" class="org.koushik.javabrains.action.TutorialAction">
+        <action name="get*" class="org.koushik.javabrains.action.{1}Action">
             <result name="success">/User/pages/success.jsp</result>
             <result name="failure">/User/pages/error.jsp</result>
         </action>
     </package>
 
    <package name="search" namespace="/" extends="struts-default">
-        <action name="searchForm">
-            <result>/User/pages/success.jsp</result>
-        </action>
+
+       <action name="search*">
+           <result>/User/pages/search{1}.jsp</result>
+       </action>
+
     </package>
 
 </struts>

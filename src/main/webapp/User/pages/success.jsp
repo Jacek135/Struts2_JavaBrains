@@ -10,5 +10,9 @@ Business service executed!
 </br>
 
 <s:property value = "bestTutorialSite"/>
+
+</br>
+</br>
+Thank you for using our site!!
 </body>
 </html>

@@ -4,6 +4,6 @@
     <title>ERROR</title>
 </head>
 <body>
-FUCKING ERROR !!!
+Unfortunately, you have failed!
 </body>
 </html>

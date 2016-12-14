@@ -15,5 +15,6 @@ Index
 Hello my friend!!!
 How are you??
 I jak tam sie zyje???
+No calekiem spoko
 </body>
 </html>

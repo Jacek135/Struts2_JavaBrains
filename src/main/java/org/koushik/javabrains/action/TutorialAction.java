@@ -28,4 +28,20 @@ public class TutorialAction {
         setBestTutorialSite(tutorialFinderService.getBestTutorialSite(getLanguage()));
         return "success";
     }
+
+    public String getTutorial(){
+        System.out.println("Get Tutorial Colled");
+        return "success";
+    }
+
+    public String addTutorial(){
+        System.out.println("Add Tutorial Colled");
+        return "success";
+    }
+
+    public String someOtherMethod(){
+        System.out.println("Some other method executed.");
+        return "success";
+    }
+
 }

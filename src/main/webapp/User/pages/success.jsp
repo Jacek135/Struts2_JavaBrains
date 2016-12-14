@@ -14,5 +14,6 @@ Business service executed!
 </br>
 </br>
 Thank you for using our site!!
+Spoko, nie ma sprawy!!!
 </body>
 </html>
